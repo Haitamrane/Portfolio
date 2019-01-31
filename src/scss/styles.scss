@@ -1,0 +1,56 @@
+@import 'src/scss/reset.scss';
+@import 'src/scss/font.scss';
+
+@keyframes anim {
+    100% {transform: translate(0.3125rem);}
+}
+
+@keyframes visible {
+    0% {transform: translateY(-9.375rem);}
+    100% {opacity: 1; transform: translateY(-7.5rem)}
+}
+
+@keyframes souris {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.partie1 {
+    animation: anim 1.5s forwards;
+    animation-delay: 0.5s;
+    transform: translate(-9.375rem);
+}
+
+.partie2 {
+    animation: anim 1.5s forwards;
+    animation-delay: 0.5s;
+    transform: translate(9.375rem);
+} 
+
+.titre {
+    font-family: 'lato';
+    text-align: center;
+    font-size: 30px;
+    opacity: 0;
+    animation: visible 1.5s forwards;
+    animation-delay: 2.2s;
+}
+
+.titre span {
+    font-family: 'latobold';
+    font-size: 34px;
+}
+
+.div_Mouse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mouse {
+    width: 50px;
+}
+
+.Mouse rect {
+    animation: souris 1.5s infinite;
+}
