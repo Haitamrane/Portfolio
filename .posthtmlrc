@@ -1,1 +1,1 @@
-{ "recognizeSelfClosing": false, "lowerCaseAttributeNames": flase, "minifySvg": false }
+{ "recognizeSelfClosing": false, "lowerCaseAttributeNames": false, "minifySvg": false }
