@@ -1,13 +1,30 @@
 @import 'src/scss/reset.scss';
 @import 'src/scss/font.scss';
+@import 'src/scss/responsive.scss';
 
 @keyframes anim {
-    100% {transform: translate(0.3125rem);}
+    to {transform: translate(0.3125rem);}
 }
 
 @keyframes visible {
-    0% {transform: translateY(-9.375rem);}
-    100% {opacity: 1; transform: translateY(-7.5rem)}
+    from {transform: translateY(-9.375rem);}
+    to {opacity: 1; transform: translateY(-7.5rem)}
+}
+
+@keyframes moove {
+    from  {
+        transform: translateY(-20px);
+    } to {
+        transform: translateY(20px);
+    }
+}
+
+.first {
+    height: 100vh;
+}
+
+.logo {
+    padding-top: 20%;
 }
 
 .partie1 {
@@ -22,26 +39,69 @@
     transform: translate(9.375rem);
 } 
 
-.titre {
+.title_first {
     font-family: 'lato';
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
     opacity: 0;
     animation: visible 1.5s forwards;
     animation-delay: 2.2s;
-}
-
-.titre span {
-    font-family: 'latobold';
-    font-size: 34px;
-}
-
-.div_mouse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 70px;
 }
 
 .mouse {
-    width: 50px;
+    margin: auto;
+    height: 50px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.point {
+    background: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    animation: moove 2s alternate infinite;
+}
+
+.two {
+    height: 100vh;
+    background: black;
+}
+
+.title_two {
+    color: white;
+    font-family: 'lato';
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.three {
+    height: 100vh;
+}
+
+.title_three {
+    color: black;
+    font-family: 'lato';
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.four {
+    height: 100vh;
+    background: black;
+}
+
+.title_four {
+    color: white;
+    font-family: 'lato';
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10%;
 }
