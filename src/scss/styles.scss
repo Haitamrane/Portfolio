@@ -10,11 +10,6 @@
     100% {opacity: 1; transform: translateY(-7.5rem)}
 }
 
-@keyframes souris {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 .partie1 {
     animation: anim 1.5s forwards;
     animation-delay: 0.5s;
@@ -41,7 +36,7 @@
     font-size: 34px;
 }
 
-.div_Mouse {
+.div_mouse {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,8 +44,4 @@
 
 .mouse {
     width: 50px;
-}
-
-.mouse rect {
-    animation: souris 1.5s infinite;
 }

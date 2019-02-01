@@ -40,14 +40,6 @@ h1, h2, h2, p, ul {
     transform: translateY(-7.5rem);
   }
 }
-@keyframes souris {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .partie1 {
   animation: anim 1.5s forwards;
   animation-delay: 0.5s;
@@ -74,7 +66,7 @@ h1, h2, h2, p, ul {
   font-size: 34px;
 }
 
-.div_Mouse {
+.div_mouse {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,8 +74,4 @@ h1, h2, h2, p, ul {
 
 .mouse {
   width: 50px;
-}
-
-.mouse rect {
-  animation: souris 1.5s infinite;
 }
