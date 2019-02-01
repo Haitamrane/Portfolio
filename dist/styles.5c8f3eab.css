@@ -1,0 +1,89 @@
+body {
+  font: 16px sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("Lato-Bold.aa1e728c.ttf") format("truetype");
+}
+@font-face {
+  font-family: "latobold";
+  src: url("Lato-Black.0f0b696b.ttf") format("truetype");
+}
+@keyframes anim {
+  100% {
+    transform: translate(0.3125rem);
+  }
+}
+@keyframes visible {
+  0% {
+    transform: translateY(-9.375rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-7.5rem);
+  }
+}
+@keyframes souris {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.partie1 {
+  animation: anim 1.5s forwards;
+  animation-delay: 0.5s;
+  transform: translate(-9.375rem);
+}
+
+.partie2 {
+  animation: anim 1.5s forwards;
+  animation-delay: 0.5s;
+  transform: translate(9.375rem);
+}
+
+.titre {
+  font-family: "lato";
+  text-align: center;
+  font-size: 30px;
+  opacity: 0;
+  animation: visible 1.5s forwards;
+  animation-delay: 2.2s;
+}
+
+.titre span {
+  font-family: "latobold";
+  font-size: 34px;
+}
+
+.div_Mouse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mouse {
+  width: 50px;
+}
+
+.mouse rect {
+  animation: souris 1.5s infinite;
+}
